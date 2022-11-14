@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button onclick="fun()">submit</button>
+    <input type="text" id="num1">
+    
+
+</body>
+<script>
+    function fun()
+    {
+    let day=Number(document.getElementById("num").value);
+    
+   switch(day)
+   {
+    case 0:
+        day="sunday";
+        break;
+
+        
+    case 1:
+        day="monday";
+        break;
+
+        case 2:
+            day="tusday";
+            break;
+
+            case 3:
+                day="wednesday";
+                break;
+                  
+                case 4:
+                    day="thursday";
+                    break;
+
+                    case 5:
+                    day="friday";
+                    break;
+
+                    case 6:
+                        day="saturday";
+                        break;
+
+                  default:
+                    day="looking forwordto the good day";
+   }
+        
+        document.getElementById("num1").value= " day is "+day;
+    
+   
+
+
+    
+}  
+    
+</script>
+</html>
